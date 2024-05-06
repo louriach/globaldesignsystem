@@ -91,6 +91,7 @@ em {
     display: flex;
     justify-content: center;
     height: 100%;
+    margin: 0 auto;
 }
 
 .intro {
@@ -98,13 +99,13 @@ em {
     border: 1px solid rgba(255,255,255,0.1);
     border-radius: 32px;
     -webkit-box-shadow: 0px 8px 12px 0px rgba(0,0,0,0.24);
--moz-box-shadow: 0px 8px 12px 0px rgba(0,0,0,0.24);
-box-shadow: 0px 8px 12px 0px rgba(0,0,0,0.24);
+    -moz-box-shadow: 0px 8px 12px 0px rgba(0,0,0,0.24);
+    box-shadow: 0px 8px 12px 0px rgba(0,0,0,0.24);
     color: white;
     display: inline-block;
   font-size: 1rem;
   margin: 1rem;
-  padding: 3rem;
+  padding: 2rem;
 }
 
 .title {
@@ -112,22 +113,40 @@ box-shadow: 0px 8px 12px 0px rgba(0,0,0,0.24);
     border-radius: 12px;
     color: #03011A;
     display: inline-block;
-    font-size: 2rem;
+    font-size: 1rem;
     margin-bottom: 1.5rem;
-    margin-left: -3.5rem;
-    padding: 1rem 1rem 1rem 3.5rem;
+    margin-left: -2.5rem;
+    padding: 1rem 1rem 1rem 2.5rem;
 }
 
 .description {
     color: rgba(255,255,255,.75);
-    font-size: 4rem;
+    font-size: 2rem;
     font-weight: bold;
+    line-height: 2.5rem;
 }
 
 hr {
     border-color: rgba(0,0,0,0.40);
     margin: 1rem 0;
     max-width: 25%;
+}
+
+@media all and (min-width: 768px) {
+    .container {
+        width: 100%;
+    }
+    .title {
+        font-size: 2rem;
+        margin-left: -3.5rem;
+        padding: 1rem 1rem 1rem 3.5rem;
+}
+    .description {
+        font-size: 4rem;
+    }
+    .intro {
+        padding: 3rem;
+    }
 }
 </style>
 	
