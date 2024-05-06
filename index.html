@@ -72,7 +72,7 @@ body {
 
 body {
     background: #040221;
-    background-image: url("pattern.png");
+    background-image: url("pattern-grid.png");
     background-size: 40px 40px;
     color: #000;
     font-family: "Prata", serif;
@@ -95,7 +95,7 @@ em {
 }
 
 .intro {
-    background-color: #03011A;
+    background-color: rgba(23,21,50,.7);
     border: 1px solid rgba(255,255,255,0.1);
     border-radius: 32px;
     -webkit-box-shadow: 0px 8px 12px 0px rgba(0,0,0,0.24);
@@ -110,6 +110,7 @@ em {
 
 .title {
     background:rgba(255,255,255,0.75);
+    border: 1px solid rgba(255,255,255,0.7);
     border-radius: 12px;
     color: #03011A;
     display: inline-block;
@@ -126,18 +127,13 @@ em {
     line-height: 2.5rem;
 }
 
-hr {
-    border-color: rgba(0,0,0,0.40);
-    margin: 1rem 0;
-    max-width: 25%;
-}
-
 @media all and (min-width: 768px) {
     .container {
         width: 100%;
     }
     .title {
         font-size: 2rem;
+        margin-bottom: 2rem;
         margin-left: -3.5rem;
         padding: 1rem 1rem 1rem 3.5rem;
 }
